@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <app title="OpenGL Tutorial" file="OpenGLTutorial" package="net.twotime.opengltutorial" version="0.0.1" company="2time.net"  />
+	<main name="Main" />
+
+	<source path="source" />
+
+	<duelllib name="duellkit" version="4.0.0+" />
+
+    <haxelib name="format" version="3.1.2" />
+
+    <library-config>
+
+        <filesystem>
+            <static-assets path="assets" />
+        </filesystem>
+
+    </library-config>
+
+</project>
