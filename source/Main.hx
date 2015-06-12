@@ -62,13 +62,13 @@ class Main
 
         configureInput();
 
-        testArray  = [
-            tests.OpenGLTest,
-            tests.clearColorTest.ClearColorTest,
-            tests.triangleTest.TriangleTest,
-            tests.textureTest.TextureTest,
-            tests.meshTest.MeshTest
-        ];
+        testArray = [ tests.OpenGLTest,
+                      tests.clearColorTest.ClearColorTest,
+                      tests.triangleTest.TriangleTest,
+                      tests.textureTest.TextureTest,
+                      tests.meshTest.MeshTest,
+                      tests.projectionTest.ProjectionTest,
+                      tests.transformTest.TransformTest];
 
         currentTestNumber = testArray.length - 1;
         switchToTest(currentTestNumber);
