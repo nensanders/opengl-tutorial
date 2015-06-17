@@ -68,7 +68,8 @@ class Main
                       tests.textureTest.TextureTest,
                       tests.meshTest.MeshTest,
                       tests.projectionTest.ProjectionTest,
-                      tests.transformTest.TransformTest];
+                      tests.transformTest.TransformTest,
+                      tests.directionalLightTest.DirectionalLightTest];
 
         currentTestNumber = testArray.length - 1;
         switchToTest(currentTestNumber);

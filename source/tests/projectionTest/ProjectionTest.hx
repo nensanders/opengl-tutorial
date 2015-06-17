@@ -41,8 +41,8 @@ using types.Matrix4Tools;
 
 class ProjectionTest extends OpenGLTest
 {
-    inline private static var VERTEXSHADER_PATH = "common/shaders/ScreenSpace_PosMVP.vsh";
-    inline private static var FRAGMENTSHADER_PATH = "common/shaders/ScreenSpace_Color.fsh";
+    inline private static var VERTEXSHADER_PATH = "common/shaders/Base_PosColor.vsh";
+    inline private static var FRAGMENTSHADER_PATH = "common/shaders/Base_Color.fsh";
 
     private var textureShader: Shader;
 
@@ -114,7 +114,7 @@ class ProjectionTest extends OpenGLTest
         var fragmentShader: String = AssetLoader.getStringFromFile(FRAGMENTSHADER_PATH);
 
         textureShader = new Shader();
-        textureShader.createShader(vertexShader, fragmentShader, ["a_Position", "a_Color"], ["u_Matrix"]);
+        textureShader.createShader(vertexShader, fragmentShader, ["a_Position", "a_Color"], ["u_MVPMatrix"]);
     }
 
     private function destroyShader(): Void
@@ -139,14 +139,11 @@ class ProjectionTest extends OpenGLTest
 
         if (percent >= 0)
         {
-            //projectionMatrix.interpolate(perspectiveMatrix, orthogonalMatrix, 1 + percent); // interpolate
-            projectionMatrix.set(orthogonalMatrix);                                           // set immediately
-
+            projectionMatrix.interpolate(orthogonalMatrix, perspectiveMatrix, percent);
         }
         else
         {
-            //projectionMatrix.interpolate(orthogonalMatrix, perspectiveMatrix, percent);
-            projectionMatrix.set(perspectiveMatrix);
+            projectionMatrix.interpolate(perspectiveMatrix, orthogonalMatrix, 1 + percent);
         }
 
         workMatrix.set(modelMatrix);
