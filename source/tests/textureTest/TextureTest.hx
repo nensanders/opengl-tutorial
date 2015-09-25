@@ -27,7 +27,7 @@
 package tests.textureTest;
 
 import tests.utils.Shader;
-import duell.DuellKit;
+import duellkit.DuellKit;
 import types.Data;
 import types.DataType;
 import gl.GL;

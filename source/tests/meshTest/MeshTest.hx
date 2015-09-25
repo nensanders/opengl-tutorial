@@ -29,7 +29,7 @@ package tests.meshTest;
 import tests.utils.Bitmap;
 import tests.utils.ImageDecoder;
 import tests.utils.AssetLoader;
-import duell.DuellKit;
+import duellkit.DuellKit;
 import tests.utils.Shader;
 import types.Data;
 import gl.GL;

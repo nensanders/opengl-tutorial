@@ -26,7 +26,7 @@
 
 package tests.directionalLightTest;
 
-import duell.DuellKit;
+import duellkit.DuellKit;
 import gl.GL;
 import gl.GLDefines;
 import types.Data;

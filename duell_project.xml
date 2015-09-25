@@ -6,7 +6,7 @@
 
 	<source path="source" />
 
-	<duelllib name="duellkit" version="4.0.0+" />
+	<duelllib name="duellkit" version="5.0.0+" />
 
     <haxelib name="format" version="3.1.2" />
 

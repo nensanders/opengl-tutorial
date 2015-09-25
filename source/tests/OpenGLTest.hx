@@ -29,7 +29,7 @@ package tests;
 import gl.GL;
 import gl.GLDefines;
 
-import duell.DuellKit;
+import duellkit.DuellKit;
 
 class OpenGLTest
 {

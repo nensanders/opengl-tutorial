@@ -26,7 +26,7 @@
 
 package tests.projectionTest;
 
-import duell.DuellKit;
+import duellkit.DuellKit;
 import gl.GL;
 import gl.GLDefines;
 import tests.projectionTest.AxisMesh;

@@ -24,7 +24,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import duell.DuellKit;
+import duellkit.DuellKit;
 
 import input.Touch;
 import input.MouseButtonState;
