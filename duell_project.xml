@@ -14,8 +14,21 @@
 
         <filesystem>
             <static-assets path="assets" />
-        </filesystem>
+            <embed-assets value="true" />
+      </filesystem>
+
+        <opengl>
+            <html5-window-size width="768" height="512"/>
+        </opengl>
 
     </library-config>
+
+    <platform-config>
+
+        <html5>
+            <win-size width="768" height="512"/>
+        </html5>
+
+    </platform-config>
 
 </project>
